@@ -1,0 +1,23 @@
+{
+  "base_url": "https://collgs.lu/catalog/oseo/search",
+  "parameters": {
+    "parentIdentifier": "S2_MSIL1C",
+    "box": "-73.43753408585016,45.73021716999517,-73.2071785066827,45.898202104983724",
+    "timeStart": "2025-04-01T00:00:00.000Z",
+    "timeEnd": "2025-08-26T00:00:00.000Z",
+    "cloudCover": "[0,47]",
+    "httpAccept": "json",
+    "count": 50
+  },
+  "output_directory": "/mnt/0_ARCTUS_Projects/19_SAGE-Port/dataset/L1/test/",
+  "connection": {
+    "timeout": 120,
+    "retries": 3,
+    "user_agent": "eo-downloader/1.0"
+  },
+  "download_options": {
+    "chunk_size": 65536,
+    "concurrent_downloads": 4,
+    "skip_existing": true
+  }
+}
