@@ -1,0 +1,25 @@
+{
+  "base_url": "https://collgs.lu/catalog/oseo/search",
+  "parameters": {
+    "parentIdentifier": "S2_MSIL2A",
+    "box": "-73.3533267672645,45.78947623450331,-73.2349231864892,45.879022657149314",
+    "timeStart": "2025-03-01T00:00:00.000Z",
+    "timeEnd": "2025-08-26T00:00:00.000Z",
+    "cloudCover": "[0,49]",
+    "httpAccept": "json",
+    "productType": "S2MSI2A",
+    "platform": "Sentinel-2",
+    "orbitDirection": "ASCENDING",
+    "maxRecords": 100
+  },
+  "output_directory": "downloads",
+  "connection": {
+    "timeout": 120,
+    "retries": 3,
+    "user_agent": "eo-downloader/1.0"
+  },
+  "download_options": {
+    "chunk_size": 65536,
+    "skip_existing": true
+  }
+}
