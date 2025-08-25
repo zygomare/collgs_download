@@ -57,21 +57,41 @@ The configuration file is in JSON format and contains the following parameters:
 ## Parameters
 
 ### Search Parameters
-parentIdentifier: Product collection ID (e.g., S2_MSIL1C, S2_MSIL2A)
-box: Geographic bounding box in format "west,south,east,north"
-timeStart: Start date in ISO format
-timeEnd: End date in ISO format
-cloudCover: Cloud coverage filter range in format "[min,max]"
-count: Maximum number of results to return
+* parentIdentifier: Product collection ID  
+    * S2_MSIL1C: Sentinel-2 Level-1C products
+  * S2_MSIL2A: Sentinel-2 Level-2A products
+  * S1_SAR_GRD: Sentinel-1 Ground Range Detected products
+  * S1_SAR_SLC: Sentinel-1 Single Look Complex products
+  * S3_OL_1_EFR: Sentinel-3 OLCI Level-1 Full Resolution products
+  * S3_OL_2_LFR: Sentinel-3 OLCI Level-2 Land Full Resolution products
+  * See CollGS documentation for the complete list: https://collgs.lu/support
+
+* box: Geographic bounding box in format "west,south,east,north"  
+
+* timeStart: Start date in ISO format  
+* timeEnd: End date in ISO format  
+* cloudCover: Cloud coverage filter range in format "[min,max]"  
+* count: Maximum number of results to return  
+* platform: Satellite platform  
+  * Sentinel-1, Sentinel-2, Sentinel-3
+* productType: Product type  
+  * For S2: S2MSI1C, S2MSI2A
+  * For S1: GRD, SLC
+  * For S3: OL_1_EFR, OL_2_LFR
+* orbitDirection: Direction of satellite orbit
+  * ASCENDING, DESCENDING
+
 
 ### Connection Settings
-timeout: Connection timeout in seconds
-retries: Number of connection retry attempts
-user_agent: User agent string for requests
+* timeout: Connection timeout in seconds
+* retries: Number of connection retry attempts
+* user_agent: User agent string for requests
+
 
 ### Download Options
-chunk_size: Size of download chunks in bytes
-skip_existing: Whether to skip already downloaded files
+* chunk_size: Size of download chunks in bytes
+* skip_existing: Whether to skip already downloaded files
+
 
 ## Example
 1. Create a configuration file named config.json
