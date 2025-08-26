@@ -62,8 +62,6 @@ The configuration file is in JSON format and contains the following parameters:
   * S2_MSIL2A: Sentinel-2 Level-2A products
   * S1_SAR_GRD: Sentinel-1 Ground Range Detected products
   * S1_SAR_SLC: Sentinel-1 Single Look Complex products
-  * S3_OL_1_EFR: Sentinel-3 OLCI Level-1 Full Resolution products
-  * S3_OL_2_LFR: Sentinel-3 OLCI Level-2 Land Full Resolution products
   * See CollGS documentation for the complete list: https://collgs.lu/support
 
 * box: Geographic bounding box in format "west,south,east,north"  
@@ -77,8 +75,7 @@ The configuration file is in JSON format and contains the following parameters:
 * productType: Product type  
   * For S2: S2MSI1C, S2MSI2A
   * For S1: GRD, SLC
-  * For S3: OL_1_EFR, OL_2_LFR
-* orbitDirection: Direction of satellite orbit
+  * orbitDirection: Direction of satellite orbit
   * ASCENDING, DESCENDING
 
 
